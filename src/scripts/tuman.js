@@ -5,6 +5,9 @@ function tuman_function(id,name,viloyatId, mahallas) {
                   <div>${mahallas}</div>
                 </button>
               </h2>
+
+
+              
               <div id="accordion-nested-collapse-body-${viloyatId}" class="hidden" aria-labelledby="accordion-nested-collapse-heading-${id}">
                 <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
                   <p class="text-gray-500 dark:text-gray-400">Mahallalar</p>

@@ -23,7 +23,7 @@ function addNewRegion(){
 
 
   let accordion= document.getElementById("accordion-nested-parent");
-  let tumanlar = "";
+  let tumanlar = ""
 
   tumanlar += tuman_function(tuman_1,`${region_name}_${tuman_1}_01`,region_name, ['an', 'sa']);
   tumanlar += tuman_function(tuman_2,`${region_name}_${tuman_2}_02`,region_name, ['sa', 'sa']);
