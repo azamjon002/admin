@@ -238,6 +238,28 @@
 				>
 					Create Student
 				</button>
+				
+				<button
+					onclick="setLocalStorage()"
+					class="my-2 mb-4 block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+					type="button"
+				>
+					Locale Storage create
+				</button>
+				
+				
+				<button
+					onclick="removeLocalStorage()"
+					class="my-2 mb-4 block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+					type="button"
+				>
+					Locale Storage delete
+				</button>
+
+				<div id="locale-storage">
+					
+				</div>
+
 				<table
 					class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400"
 				>
@@ -276,6 +298,7 @@
 							Create New Student
 						</h3>
 						<button
+							id="close-create-button"
 							type="button"
 							class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
 							data-modal-toggle="crud-modal"
@@ -333,7 +356,7 @@
 
                             <div class="col-span-2">
                                 <label
-									for="number"
+									for="statu"
 									class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
 									>Status</label
 								>
@@ -387,6 +410,7 @@
 		</div>
 	</body>
 
+	<script src="../scripts/test.js"></script>
 	<script src="../constantas/students.js"></script>
 	<script src="../scripts/students/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
